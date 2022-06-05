@@ -1,5 +1,5 @@
 Build:
-docker build --build-arg UID=$(id -u) --build-arg GID=$(id -g) --tag alireaza/calculator .
+docker build --build-arg UID=$(id -u) --build-arg GID=$(id -g) --tag alireaza/calculator:$(date -u +%Y%m%d) --tag alireaza/calculator .
 
 Run:
 docker run \
